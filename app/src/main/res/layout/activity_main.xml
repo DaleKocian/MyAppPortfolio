@@ -1,61 +1,73 @@
-<LinearLayout
-    android:id="@+id/llRoot"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/main_title"
-        android:id="@+id/tvTitle"
-        />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="26sp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spotify Streamer"
         android:id="@+id/btnSpotifyStreamer"
-        android:onClick="onAppLaunch"
-        />
-    <Button
+        style="@style/regAppButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score App"
+        android:layout_alignParentTop="false"
+        android:onClick="onAppLaunch"
+        android:text="Spotify Streamer" />
+
+    <Button
         android:id="@+id/btnScoreApp"
-        android:onClick="onAppLaunch"
-        />
-    <Button
+        style="@style/regAppButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Library App"
+        android:layout_below="@+id/btnSpotifyStreamer"
+        android:onClick="onAppLaunch"
+        android:text="Score App" />
+
+    <Button
         android:id="@+id/btnLibraryApp"
-        android:onClick="onAppLaunch"
-        />
-    <Button
+        style="@style/regAppButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Build It Bigger"
+        android:layout_below="@+id/btnScoreApp"
+        android:onClick="onAppLaunch"
+        android:text="Library App" />
+
+    <Button
+        style="@style/regAppButtons"
         android:id="@+id/btnBuildItBigger"
-        android:onClick="onAppLaunch"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="XYZ Reader"
+        android:layout_below="@+id/btnLibraryApp"
+        android:onClick="onAppLaunch"
+        android:text="Build It Bigger" />
+
+    <Button
+        style="@style/regAppButtons"
         android:id="@+id/btnXyzReader"
-        android:onClick="onAppLaunch"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Capstone: My Own App"
-        android:id="@+id/btnCapstone"
+        android:layout_below="@+id/btnBuildItBigger"
         android:onClick="onAppLaunch"
-        />
-</LinearLayout>
+        android:text="XYZ Reader" />
+
+    <Button
+        style="@style/mainAppButtons"
+        android:id="@+id/btnCapstone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnXyzReader"
+        android:onClick="onAppLaunch"
+        android:text="Capstone: My Own App" />
+</RelativeLayout>

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
     public static final String TAG = MainActivity.class.getName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,26 +39,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void onAppLaunch(View view) {
-        String appName = "";
-        switch (view.getId()) {
-            case R.id.btnSpotifyStreamer:
-                break;
-            case R.id.btnScoreApp:
-                break;
-            case R.id.btnLibraryApp:
-                break;
-            case R.id.btnBuildItBigger:
-                break;
-            case R.id.btnXyzReader:
-                break;
-            case R.id.btnCapstone:
-                break;
-            default:
-                Log.e(TAG, "Default Case Hit");
-        }
-        if (!appName.isEmpty()) {
-            Toast.makeText(this, "This button will launch" + ((Button)view).getText(),
-                    Toast.LENGTH_SHORT).show();
-        }
+        Toast.makeText(this, "This button will launch " + ((Button) view).getText() + " app!",
+                Toast.LENGTH_SHORT).show();
     }
 }
