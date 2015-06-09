@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- use this site to name hex colors http://chir.ag/projects/name-that-color-->
+<resources>
+    <item name="jaffa" type="color">#f08c35</item>
+    <item name="crimson" type="color">#cd0e3e</item>
+    <item name="white" type="color">#ffffff</item>
+</resources>

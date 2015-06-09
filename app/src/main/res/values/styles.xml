@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="regAppButtons">
-        <item name="android:background">#f08c35</item>
+        <item name="android:background">@color/jaffa</item>
         <item name="android:layout_below">@+id/tvTitle</item>
         <item name="android:layout_alignRight">@+id/tvTitle</item>
         <item name="android:layout_alignLeft">@+id/tvTitle</item>
@@ -15,7 +15,7 @@
         <item name="android:layout_marginLeft">10dp</item>
     </style>
     <style name="mainAppButtons" parent="regAppButtons">
-        <item name="android:background">#cd0e3e</item>
-        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@color/crimson</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>
